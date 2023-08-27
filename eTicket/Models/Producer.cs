@@ -2,7 +2,7 @@
 
 namespace eTicket.Models
 {
-    public class Product
+    public class Producer
     {
         [Key]
         public int Id { get; set; }
@@ -12,5 +12,8 @@ namespace eTicket.Models
         public string FullName { get; set; }
 
         public string Bio { get; set; }
+
+        //Relationships
+        public List<Movie> Movies { get; set; }
     }
 }
